@@ -2,15 +2,15 @@
 #include <math.h>
 int main()
 {
-  double x;
+  float x, y, z;
   printf("Enter x -> ");
-  scanf("%lf", &x);
-  if (-1.0 <= x &&x <= 1.0)
+  scanf("%f", &x);
+  if (x > 0 && x < 1.397)
   {
-    double y = 5 * sqrt(sin(sqrt(x)));
-    double z= log10(cos(log(y)));
-    printf("y(x) = %lf\nz(y) = %lf\n", y, z);
+    y = 5 * sqrt(sin(sqrt(x)));
+    z = log10(cos(log(y)));
+    printf("y(x) = %f\nz(y) = %f\n", y, z);
   }
   else
-    printf("Vallue is incorrect!)");
+    printf("Vallue is incorrect!)\n");
 }
