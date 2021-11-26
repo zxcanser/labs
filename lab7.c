@@ -8,9 +8,7 @@ void fill(int m, int n, int a[][n])
     for ( int i = 0; i < m; i ++)
     {
         for ( int j = 0; j < n; j ++)
-        {
             a[i][j] = rand()%100+1;
-        }
     } printf("Matrix filled by random numbers: \n");
 }
 void out(int m, int n, int a[][n])
@@ -36,16 +34,16 @@ void af(int m, int n, int a[][n])
 
 int main()
 {
-srand(time(0));
-int m,n;
-printf("Matrix type A[m][n]\n");
-printf("m -> ");
-scanf("%d", &m);
-printf("n -> ");
-scanf("%d", &n);
-int A[m][n];
-fill(m, n, A);
-out(m, n, A);
-af(m, n, A);
-return 0;
+    srand(time(0));
+    int m,n;
+    printf("Matrix type A[m][n]\n");
+    printf("m -> ");
+    scanf("%d", &m);
+    printf("n -> ");
+    scanf("%d", &n);
+    int A[m][n];
+    fill(m, n, A);
+    out(m, n, A);
+    af(m, n, A);
+    return 0;
 }
